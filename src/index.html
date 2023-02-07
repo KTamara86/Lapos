@@ -13,7 +13,32 @@
     
 <div class="container">
     <h1>Sablon</h1>
-    <tablet id="dolgozoTabla" class="table table striped">
+
+    <div class="addForm row">
+
+        <div class="col">
+        <input type="text" placeholder="név"
+        id="name" class="form-control">
+        </div>
+
+        <div class="col">
+            <input type="text" placeholder="település"
+            id="city" class="form-control">
+        </div>
+
+        <div class="col">
+            <input type="text" placeholder="fizetés"
+            id="salary" class="form-control">
+        </div>
+
+        <div class="col">
+            <button id="addButton"
+            class="btn-btn-primary">Hozzáad</button>
+        </div>
+
+    </div>
+
+    <table id="dolgozoTabla" class="table table striped">
         <thead>
             <tr>
                 <th>Név</th>
@@ -24,7 +49,7 @@
         <tbody id="dolgozoTorzs">
 
         </tbody>
-    </tablet>
+    </table>
     
 </div>
 <script src="app.js"></script>
